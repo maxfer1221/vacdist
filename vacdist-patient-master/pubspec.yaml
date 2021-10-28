@@ -1,0 +1,53 @@
+name: vacdist
+description: Decentralized vaccine distribution made easy (patient app).
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  vacdist_shared:
+    git:
+      url: https://gitlab.com/vacdist/vacdist_shared.git
+      ref: v3.0.3
+  google_maps_flutter: ^2.0.1
+  indexed_list_view: ^2.0.0
+  visibility_detector: ^0.2.0
+  geolocator: ^7.0.1
+  geocoding: ^2.0.0
+  http: ^0.13.0
+  flutter_signin_button: ^2.0.0-nullsafety.0
+  firebase_core: ^1.0.2
+  firebase_analytics: ^7.1.1
+  provider: ^5.0.0
+
+  bubble:
+  intl:
+  dialog_flowtter: ^0.3.0-nullsafety.0
+
+  cloud_firestore: ^1.0.2
+
+  firebase_auth: ^1.0.1
+  google_sign_in: ^5.0.1
+
+  rxdart: ^0.26.0
+
+  get:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  pedantic: ^1.9.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/api_uri.txt
+    - assets/robot.png
+    - assets/default.png
+    - assets/dialogflow_services.json
