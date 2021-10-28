@@ -1,0 +1,35 @@
+{
+  "name": "vacdist-backend",
+  "version": "1.0.0",
+  "description": "Back-end functionality for the VacDist Patient and VacDist Provider applications. Utilizes GCP, Firestore, compute engines, and Python child processes.",
+  "main": "index.js",
+  "scripts": {
+    "f_install": "sudo npm i",
+    "build": "sudo npx tsc",
+    "start": "sudo npx forever start index.js",
+    "b_start": "npm run-script build && npm start",
+    "f_start": "npm run-script f_install && npm run-script b_start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/maxfer1221/vacdist-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/maxfer1221/vacdist-backend/issues"
+  },
+  "homepage": "https://gitlab.com/maxfer1221/vacdist-backend#readme",
+  "dependencies": {
+    "cron": "^1.8.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "firebase": "^8.3.0",
+    "firebase-admin": "^9.5.0",
+    "forever": "^3.0.4",
+    "geolib": "^3.3.1",
+    "node-fetch": "^2.6.1",
+    "node-schedule": "^2.0.0",
+    "package.json": "^2.0.1"
+  }
+}

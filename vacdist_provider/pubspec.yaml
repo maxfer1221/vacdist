@@ -1,0 +1,32 @@
+name: vacdist_provider
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  vacdist_shared:
+    git:  
+      url: https://gitlab.com/vacdist/vacdist_shared.git
+      ref: v3.1.0
+  crypto: ^3.0.0
+  google_maps_flutter: ^2.0.1
+  geocoding: ^2.0.0
+  geolocator: ^7.0.1
+  http: ^0.13.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  pedantic: ^1.9.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/api_uri.txt

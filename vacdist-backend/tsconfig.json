@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "removeComments": true,
+        "skipLibCheck": true,
+        "outDir": "."
+    },
+    "include": ["./tsc/*"],
+    "exclude": [
+        "./node_modules",
+        "node_modules"
+    ]
+    
+}
