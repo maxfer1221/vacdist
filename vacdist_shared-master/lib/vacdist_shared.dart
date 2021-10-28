@@ -1,1 +1,0 @@
-library vacdist_shared;
